@@ -340,33 +340,6 @@ ul.tags li a:hover {
     text-decoration: underline;
 }
 
-/*  
-    Enrique's Custom CSS
-    Media Queries
-*/   
-
-/* Masthead Fix*/
-@media screen and (min-width : 1010px) and (max-width : 1225px) {
-/* Styles */
-
-#profile {
-    margin: 40px 4.4444444% 120px 2.2222222%; /* 40 / 900 */
-
-}
-
-}
-
-/* Masthead Fix*/
-@media screen and (min-width : 860px) and (max-width : 1009px) {
-/* Styles */
-
-#profile {
-    margin: 40px 4.4444444% 240px 2.2222222%; /* 40 / 900 */
-
-}
-
-}
-
 
 
 
@@ -413,12 +386,25 @@ ul.tags li a:hover {
 // Medium screens
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    #profile {
+            margin: 40px 4.4444444% 120px 2.2222222%; /* 40 / 900 */
+
+    }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
 
 // Large screens
 @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+    #profile {
+        margin: 40px 4.4444444% 240px 2.2222222%; /* 40 / 900 */
+
+    }
+
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
 @media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
