@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
     <meta name="text:Google Analytics ID" content=''/>
     {block:Description}
-    <meta name="description" content="{MetaDescription}" />
+        <meta name="description" content="{MetaDescription}" />
     {/block:Description}
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Chicago History Museum presents Shoeless Joe Jackson" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://theshoelessjoe.tumblr.com/" />
@@ -19,6 +18,8 @@
 
     <title>{block:TagPage}{Tag} posts - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
     
+    <link rel="stylesheet" href="http://chicagohistory.org/shoeless-joe/css/foundation.css" />
+    <script src="http://chicagohistory.org/shoeless-joe/js/vendor/modernizr.js"></script>
 
     <link rel="shortcut icon" href="{Favicon}">
     <link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -27,6 +28,7 @@
     <link href='http://fonts.googleapis.com/css?family=Rufina' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'> -->
 
+    <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'ac34fe85-bdf6-40fe-9b97-d3b01d1a1c88'});</script>
 <!-- 
 ****************************************************
 Theme by: Enrique Gonzalez, enriqueswork.tumblr.com
@@ -49,163 +51,6 @@ document.createElement('time');
 </script>
 <![endif]-->
 
-
-<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'ac34fe85-bdf6-40fe-9b97-d3b01d1a1c88'});</script>
-</head>
-
-<body>
-<header id="masthead">
-    <!--Details: portrait, title and description-->
-    <div id="top-row"><img id="logo" src="http://25.media.tumblr.com/a8ba797f832bcd4df55918d88acb81c5/tumblr_mk0oxvIClC1s3wjevo4_r2_1280.png" alt="Chicago History Museum Logo" /></div> 
-
-    <section id="site_name">
-        <a href="http://theshoelessjoe.tumblr.com/tagged/blacksox/chrono"><img id="profile" src="http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg"/></a>
-        <h1>{Title}</h1>
-
-        {block:Description}
-            <p id="description">{Description}</p>
-            <a class="social_icons" href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png"/></a>
-        {/block:Description}
-
-        <p class="chrono"><a href="http://theshoelessjoe.tumblr.com/tagged/blacksox/chrono">&gt; Read from the beginning</a><br /><span st_url='{Permalink}' st_title='{Title}' class='st_facebook_hcount' displayText='Facebook'></span><span st_url='{Permalink}' st_title='{Title}' class='st_twitter_hcount' displayText='Tweet'></span><span st_url='{Permalink}' st_title='{Title}' class='st_email_hcount' displayText='Email'></span></p>
-    </section>
-            
-    <!--Navigation-->
-    <nav>
-        <ul>
-            {block:HasPages}
-            {block:Pages}
-                <li><a href="{URL}">{Label}</a></li>
-            {/block:Pages}
-            {/block:HasPages}
-            {block:SubmissionsEnabled}
-                <li> <a href="/submit">{SubmitLabel}</a></li>
-            {/block:SubmissionsEnabled}
-            {block:AskEnabled}
-                <li> <a href="/ask">{AskLabel}</a></li>
-            {/block:AskEnabled}
-        </ul>
-    </nav>
-</header>
-
-
-<!--Content holder-->
-<div id="content">
-    {block:Posts}
-        <article>
-            <!-- <p class="post_date"><a href="{Permalink}"><time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">{Month} {DayOfMonth}, {Year}</time></a></p> -->
-            
-            <!--Unique code for each post type-->
-            {block:Text}
-                <div class="text">
-                    {block:Title}<h1 class="title"><a href="{Permalink}">{Title}</a></h1>{/block:Title}
-                    {Body}
-                </div>
-            {/block:Text}
-
-           <!--  {block:Photo}
-                <div class="photo">
-                    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
-                {block:Caption}{Caption}{/block:Caption}
-            {/block:Photo} -->
-
-        <!--     {block:Photoset}
-                <div class="photoset">          
-                    {block:Caption}
-                        {Caption}
-                    {/block:Caption}
-                    {block:Photos}
-                        <img src="{PhotoURL-HighRes}" class="highres">
-                    {/block:Photos}
-            {/block:Photoset} -->
-
-        <!--     {block:Panorama}
-                <div class="panorama">
-                    {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
-                    {block:Caption}{Caption}{/block:Caption}
-            {/block:Panorama} -->
-
-        <!--     {block:Quote}
-                <div class="quote">
-                    <blockquote>{Quote}</blockquote>
-                    {block:Source}<cite> {Source} </cite>{/block:Source}
-            {/block:Quote} -->
-
-        <!--     {block:Link}
-                <div class="link">
-                    <h1 class="title"><a href="{URL}">{Name}</a></h1>
-                    {block:Description}{Description}{/block:Description}
-            {/block:Link} -->
-
-        <!--     {block:Chat}
-                <div class="chat">
-                <ul>
-                {block:Lines}<li class="{Alt}">{block:Label}<span class="label">{Label}</span>{/block:Label}<p> {Line} </p></li>{/block:Lines}
-                </ul>
-            {/block:Chat} -->
-
-        <!--     {block:Audio}
-                <div class="audio">
-                    {block:AlbumArt}<img src="{AlbumArtURL}" />{/block:AlbumArt}
-                    {block:Caption}{Caption}{/block:Caption}
-                <div class="player">{AudioPlayerBlack}</div>
-            {/block:Audio}
-         -->
-        <!--     {block:Video}
-                <div class="video">
-                    <div class="video-player">{Video-500}</div>
-                    {block:Caption}{Caption}{/block:Caption}
-            {/block:Video} -->
-
-        <!-- {block:Answer}
-                <div class="answer">
-                    <h1 class="title">{Question}</h1>
-                    <div class="user">
-                    <img src="{AskerPortraitURL-96}"/>
-                    <p>{Asker}</p>
-                </div>
-                {Answer}
-            {/block:Answer} -->
-
-                <!-- </div> -->
-
-        <!--    {block:Date}
-                {/block:Date} -->
-
-        </article>
-    {/block:Posts}
-<!--Close of article-->
-</div>
-
-
-
-
-<footer>
-<!--Pagination: previous/next page links-->
-{block:Pagination}
-    <nav id="pagination">
-        <ul>
-            {block:PreviousPage}<li><a href="{PreviousPage}">Previous</a></li>{/block:PreviousPage}
-            {block:NextPage}<li><a href="{NextPage}">Next</a></li>{/block:NextPage}
-        </ul>
-    </nav>
-    {/block:Pagination}
-    <p id="copyright">&copy; Chicago History Museum, 2013. All rights reserved.</p>
-</footer>
-
-
-</body>
-</html>
-
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-
     <!--For users adding Google Analytics ID-->
     <script type="text/javascript">
 
@@ -220,34 +65,88 @@ document.createElement('time');
       })();
 
     </script>
-  </head>
+</head>
   
-  <body>
+<body>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+<div class="row">
+<div class="large-12 columns">
+    <header id="masthead">
+        <!--Details: portrait, title and description-->
+        <div id="top-row"><img id="logo" src="http://25.media.tumblr.com/a8ba797f832bcd4df55918d88acb81c5/tumblr_mk0oxvIClC1s3wjevo4_r2_1280.png" alt="Chicago History Museum Logo" /></div> 
+
+        <section id="site_name">
+            <a href="http://theshoelessjoe.tumblr.com/tagged/blacksox/chrono"><img id="profile" src="http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg"/></a>
+            <h1>{Title}</h1>
+
+            {block:Description}
+                <p id="description">{Description}</p>
+                <a class="social_icons" href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png"/></a>
+            {/block:Description}
+
+            <div><span st_url='{Permalink}' st_title='{Title}' class='st_facebook_hcount' displayText='Facebook'></span><span st_url='{Permalink}' st_title='{Title}' class='st_twitter_hcount' displayText='Tweet'></span><span st_url='{Permalink}' st_title='{Title}' class='st_email_hcount' displayText='Email'></span></div>
+        </section>
+            
+        <!--Navigation-->
+        <nav>
+            <ul>
+                {block:HasPages}
+                    {block:Pages}
+                        <li><a href="{URL}">{Label}</a></li>
+                    {/block:Pages}
+                {/block:HasPages}
+                {block:SubmissionsEnabled}
+                    <li> <a href="/submit">{SubmitLabel}</a></li>
+                {/block:SubmissionsEnabled}
+            </ul>
+        </nav>
+    </header>
+</div>
+</div>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-        </div>
-      </div>
-    </div>
+<div class="row">
+<div class="large-12 columns">
+    <section id="content">
+        {block:Posts}
+            <article class="text">
+
+                {block:Text}
+                    <header>
+                        {block:Title}
+                            <h1 class="Chapter-title"><a href="{Permalink}">{Title}</a></h1>
+                        {/block:Title}
+                    </header>
+
+                    {Body}
+
+                {/block:Text}
+
+            </article>
+        {/block:Posts}
+    </section>
+
+    <footer>
+        <!--Pagination: previous/next page links-->
+        {block:Pagination}
+            <ul id="pagination">
+                {block:PreviousPage}<li><a href="{PreviousPage}">Previous</a></li>{/block:PreviousPage}
+                {block:NextPage}<li><a href="{NextPage}">Next</a></li>{/block:NextPage}
+            </ul>
+        {/block:Pagination}
+        <p id="copyright">&copy; Chicago History Museum, 2014. All rights reserved.</p>
+    </footer>
+</div>
+</div>
 
    
     
-    <script src="http://chicagohistory.org/shoeless-joe/js/vendor/jquery.js"></script>
-    <script src="http://chicagohistory.org/shoeless-joe/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+<script src="http://chicagohistory.org/shoeless-joe/js/vendor/jquery.js"></script>
+<script src="http://chicagohistory.org/shoeless-joe/js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+
+</body>
 </html>
 
 
