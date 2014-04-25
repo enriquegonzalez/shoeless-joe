@@ -92,7 +92,41 @@ img {
 // Small screens
 @media only screen { } /* Define mobile styles */
 
-@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+
+    .intro {
+        padding: .5rem;
+        width: 18rem;
+        right: 1rem;
+    }
+
+    .title--site {
+        font-size: 1.5rem;
+    }
+
+    .chapters {
+        padding: 1rem;
+    }
+
+    .Chapter-title {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .hide-small {
+        display: none;
+    }
+
+    .header--site {
+        height: 60rem;
+    }
+
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
