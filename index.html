@@ -81,6 +81,34 @@ document.createElement('time');
                 <p class="about-joe">{Description}</p>
             {/block:Description}
         </section>
+        <div class="contain-to-grid sticky">
+            <nav class="top-bar" data-topbar data-options="sticky_on: large">
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href="#">My Site</a></h1>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+                </ul>
+
+                <section class="top-bar-section">
+                    <!-- Right Nav Section -->
+                    <ul class="right">
+                        <li class="active"><a href="#">Right Button Active</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Right Button Dropdown</a>
+                            <ul class="dropdown">
+                                <li><a href="#">First link in dropdown</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Left Nav Section -->
+                    <ul class="left">
+                        <li><a href="#">Left Nav Button</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
     </header>
 </div>
 </div>
@@ -109,9 +137,6 @@ document.createElement('time');
     <footer>
         <div class="row">
         <div class="large-6 columns">
-            <a class="social_icons" href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png"/></a>
-        </div>
-        <div class="large-6 columns">
             <!--Pagination: previous/next page links-->
             {block:Pagination}
                 <ul id="pagination">
@@ -119,6 +144,9 @@ document.createElement('time');
                     {block:NextPage}<li><a href="{NextPage}">Next</a></li>{/block:NextPage}
                 </ul>
             {/block:Pagination}
+        </div>
+        <div class="large-6 columns clearfix">
+            <a href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png" class="icons--social right"/></a>
         </div>
         </div>
         <p id="copyright">&copy; Chicago History Museum, 2014. All rights reserved.</p>
@@ -136,7 +164,3 @@ document.createElement('time');
 
 </body>
 </html>
-
-
-
-
