@@ -1,9 +1,9 @@
 html, body {
     background-color: rgba(34,34,34,1);
 }
-           
+
 .top-row {
-    background-color: rgba(34,34,34,1);
+    background-color: rgba(0,0,0,1);
     padding: 1rem;
     width: 100%;
 }
@@ -13,7 +13,7 @@ html, body {
 }
 
 .header--site {
-    background: url('http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg') no-repeat center center scroll; 
+    background: url('http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -23,10 +23,12 @@ html, body {
 }
 
 .intro {
-    background-color: rgba(255,255,255,.25);
-    padding: 2rem;
+    background-color: rgba(255,255,255,.5);
+    padding: 1rem 3rem;
     position: absolute;
     bottom: 0;
+    width: 45rem;
+    right: 1rem;
 }
 
 .title {
@@ -34,15 +36,16 @@ html, body {
 }
 
     .title--site {
-        
+
     }
 
 .about-joe {
-    
+
 }
 
 .chapters {
     background-color: rgba(255,255,255,1);
+    padding: 2rem 5rem;
 }
 
 
