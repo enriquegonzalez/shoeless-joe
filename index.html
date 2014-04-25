@@ -71,20 +71,16 @@ document.createElement('time');
     
 <div class="row">
 <div class="large-12 columns">
-    <header id="masthead">
+    <header class="header--site">
         <!--Details: portrait, title and description-->
-        <div class="top-row"><img id="logo" src="http://25.media.tumblr.com/a8ba797f832bcd4df55918d88acb81c5/tumblr_mk0oxvIClC1s3wjevo4_r2_1280.png" alt="Chicago History Museum Logo" /></div> 
+        <div class="top-row"><img class="logo-museum" src="http://25.media.tumblr.com/a8ba797f832bcd4df55918d88acb81c5/tumblr_mk0oxvIClC1s3wjevo4_r2_1280.png" alt="Chicago History Museum Logo" /></div> 
 
-        <section id="site_name">
-            <a href="http://theshoelessjoe.tumblr.com/tagged/blacksox/chrono"><img id="profile" src="http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg"/></a>
-            <h1>{Title}</h1>
+        <section class="intro">
+            <h1 class="title title--site">{Title}</h1>
 
             {block:Description}
-                <p id="description">{Description}</p>
-                <a class="social_icons" href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png"/></a>
+                <p class="about-joe">{Description}</p>
             {/block:Description}
-
-            <div><span st_url='{Permalink}' st_title='{Title}' class='st_facebook_hcount' displayText='Facebook'></span><span st_url='{Permalink}' st_title='{Title}' class='st_twitter_hcount' displayText='Tweet'></span><span st_url='{Permalink}' st_title='{Title}' class='st_email_hcount' displayText='Email'></span></div>
         </section>
             
         <!--Navigation-->
@@ -106,7 +102,7 @@ document.createElement('time');
     
 <div class="row">
 <div class="large-12 columns">
-    <section id="content">
+    <section class="chapters">
         {block:Posts}
             <article class="text">
 
@@ -126,13 +122,20 @@ document.createElement('time');
     </section>
 
     <footer>
-        <!--Pagination: previous/next page links-->
-        {block:Pagination}
-            <ul id="pagination">
-                {block:PreviousPage}<li><a href="{PreviousPage}">Previous</a></li>{/block:PreviousPage}
-                {block:NextPage}<li><a href="{NextPage}">Next</a></li>{/block:NextPage}
-            </ul>
-        {/block:Pagination}
+        <div class="row">
+        <div class="large-6 columns">
+            <a class="social_icons" href="https://twitter.com/TheShoelessJoe"><img  src="http://25.media.tumblr.com/3b215bb3d76789985c675f44e369bd68/tumblr_mk0oxvIClC1s3wjevo2_r1_400.png"/></a>
+        </div>
+        <div class="large-6 columns">
+            <!--Pagination: previous/next page links-->
+            {block:Pagination}
+                <ul id="pagination">
+                    {block:PreviousPage}<li><a href="{PreviousPage}">Previous</a></li>{/block:PreviousPage}
+                    {block:NextPage}<li><a href="{NextPage}">Next</a></li>{/block:NextPage}
+                </ul>
+            {/block:Pagination}
+        </div>
+        </div>
         <p id="copyright">&copy; Chicago History Museum, 2014. All rights reserved.</p>
     </footer>
 </div>

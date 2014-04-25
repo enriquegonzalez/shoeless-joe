@@ -1,13 +1,49 @@
-
-body {
-    background-color: rgba(255,255,255,1);
+html, body {
+    background-color: rgba(34,34,34,1);
 }
            
 .top-row {
-    background-color: #222;
+    background-color: rgba(34,34,34,1);
+    padding: 1rem;
     width: 100%;
 }
 
+.logo-museum {
+    width: 20rem;
+}
+
+.header--site {
+    background: url('http://25.media.tumblr.com/a3667b254114425fdb001dc8c980e35d/tumblr_mk0oxvIClC1s3wjevo1_1280.jpg') no-repeat center center scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 50rem;
+
+}
+
+.intro {
+    background-color: rgba(255,255,255,.25);
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.title {
+
+}
+
+    .title--site {
+        
+    }
+
+.about-joe {
+    
+}
+
+.chapters {
+    background-color: rgba(255,255,255,1);
+}
 
 
 
