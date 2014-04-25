@@ -72,14 +72,15 @@ img {
     margin: .5rem;
 }
 
-/*#pagination li a {
+.button {
+    background-color: hsla(360, 100%, 100%, .7);
     color: #000;
-    font-size: 1.5rem;
 }
 
-#pagination li:hover  {
+.button:hover, .button:active {
     background-color: hsla(360, 100%, 100%, 1);
-}*/
+    color: #000;
+}
 
 
 /*Foundation Overrides*/
