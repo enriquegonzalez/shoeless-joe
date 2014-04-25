@@ -84,6 +84,12 @@ img {
 }
 
 
+/*Foundation Overrides*/
+ .top-bar-section li:not(.has-form) a:not(.button):hover {
+     background-color: rgba(0, 120, 160, 1);
+ }
+
+
 // Small screens
 @media only screen { } /* Define mobile styles */
 
