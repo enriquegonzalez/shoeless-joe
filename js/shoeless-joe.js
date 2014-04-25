@@ -1,13 +1,12 @@
 $(document).ready( function () {
 
-	$('li a').each(function(){
-		var $x = $(this).attr('href').text(),
-			url = window.location.pathname;
-		console.log($x);
-	   // var myHref= $(this).attr('href');
-	   // if( url == myHref) {
-	   //      $(this).addClass('active');
-	   // }
+	$('window').on("load", "li a", function(){
+		var $menuItem = $(this).attr('href'),
+			url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+	   
+	   if( $menuItem === url) {
+	        $(this).addClass('active');
+	   }
 	});
 
 });
