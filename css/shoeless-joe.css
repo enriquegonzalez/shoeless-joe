@@ -62,8 +62,26 @@ img {
     width: 5rem;
 }
 
+#pagination {
+    padding-top: 2rem;
+}
 
+#pagination li {
+    display: inline;
+    background-color: hsla(360, 100%, 100%, .7);
+    padding: 1.2rem;
+    margin: 2rem;
+    width: 3rem;
+}
 
+#pagination li a {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+#pagination li:hover  {
+    background-color: hsla(360, 100%, 100%, 1);
+}
 
 
 // Small screens
