@@ -1,13 +1,14 @@
 $(document).ready( function () {
 
-	$('window').on("load", "li a", function(){
+  $('window').on("load", "li a", function(){
 
-		var $menuItem = $(this).attr('href'),
-			url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
-	   
-	   if( $menuItem == url) {
-	        $menuItem.addClass('active');
-	   }
-	});
+    $("li a").each(function () {
+      var $menuItem = $(this),
+          menuHref = $menuItem.attr('href');
+
+       $("li a[href='" + window.location.href + "']").closest("li").addClass("active");
+    });
+
+  });
 
 });
